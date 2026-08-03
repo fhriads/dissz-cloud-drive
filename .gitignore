@@ -1,0 +1,77 @@
+# ==========================================
+# Node.js & Frontend Dependencies
+# ==========================================
+node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ==========================================
+# Build & Distribution Artifacts
+# ==========================================
+dist/
+dist-isolation/
+build/
+.vite/
+*.tsbuildinfo
+
+# ==========================================
+# Rust & Tauri Build Artifacts
+# ==========================================
+src-tauri/target/
+src-tauri/Cargo.lock.spec
+
+# ==========================================
+# Environment Variables & Secrets (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Local Telegram Sessions & Databases
+# ==========================================
+*.session
+*.session-journal
+*.telethon
+*.db
+*.sqlite
+*.sqlite3
+/src-tauri/*.db
+
+# ==========================================
+# Documentation Markdown Files
+# ==========================================
+docs/*.md
+docs/**/*.md
+
+# ==========================================
+# Operating System Junk
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# IDE & Code Editor Settings
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+
+# ==========================================
+# Temporary & Log Files
+# ==========================================
+*.log
+tmp/
+temp/
